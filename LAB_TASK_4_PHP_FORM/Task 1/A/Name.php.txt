@@ -1,0 +1,16 @@
+<?php
+	
+	if(isset($_REQUEST['submit'])){
+		
+		$username = $_REQUEST['name'];
+
+		if($username == ""){
+			echo "invalid name!";
+		}else{
+			echo $username;
+		}
+
+	}else{
+		echo 'invalid request';
+	}
+?>
